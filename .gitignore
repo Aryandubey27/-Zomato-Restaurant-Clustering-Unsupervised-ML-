@@ -1,0 +1,41 @@
+# Python
+*.pyc
+__pycache__/
+.Python
+build/
+dist/
+venv/
+env/
+.venv/ # Virtual environment directory name used in our setup
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb-filter
+*.ipynb.tracked
+
+# Specific to your project (models, data processing outputs, etc.)
+*.pkl           # Saved model files
+*.joblib        # Saved model files
+*.h5            # Keras/TensorFlow models
+models/         # Directory for saved models, if you create one
+output/         # Directory for output files, plots, etc.
+
+# Data (consider if your raw data is very large or sensitive)
+# For this Zomato project, your CSVs are small and essential, so you might want to keep them tracked.
+# If you process data and create new large CSVs/Parquet files, you might add them here:
+# processed_data/
+# *.csv # Uncomment if you want to ignore all CSVs (e.g., if generated)
+
+# IDE-specific files
+.vscode/        # VS Code specific settings/files
+.idea/          # PyCharm specific files
+
+# Operating System Files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db     # Windows
+Desktop.ini     # Windows
+
+# Logs
+*.log
+logs/
